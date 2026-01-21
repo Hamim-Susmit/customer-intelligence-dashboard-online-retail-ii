@@ -1,4 +1,4 @@
-# Project 6: Customer Intelligence Decision System
+# Customer Intelligence Decision System
 
 A portfolio-grade, multi-page Streamlit dashboard powered by Supabase Postgres views. It delivers
 customer insights (RFM-style KPIs, segments, monthly trends) and optionally integrates churn
