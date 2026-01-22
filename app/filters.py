@@ -5,7 +5,7 @@ from datetime import date
 
 import streamlit as st
 
-from app.db import query_df
+from db import query_df
 
 
 def get_filters() -> dict:

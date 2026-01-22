@@ -1,9 +1,15 @@
 """Customer drilldown page."""
+import sys
+from pathlib import Path
+
 import streamlit as st
 
-from app.db import query_df
-from app.filters import get_filters
-from app.ui_helpers import empty_state, format_currency
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from db import query_df
+from filters import get_filters
+from ui_helpers import empty_state, format_currency
 
 st.title("Customer Drilldown")
 filters = get_filters()

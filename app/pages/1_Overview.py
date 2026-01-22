@@ -1,10 +1,16 @@
 """Overview page with monthly metrics."""
+import sys
+from pathlib import Path
+
 import plotly.express as px
 import streamlit as st
 
-from app.db import query_df
-from app.filters import get_filters
-from app.ui_helpers import format_currency, safe_metric
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from db import query_df
+from filters import get_filters
+from ui_helpers import format_currency, safe_metric
 
 st.title("Overview")
 filters = get_filters()
